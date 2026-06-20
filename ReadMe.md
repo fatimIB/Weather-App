@@ -129,27 +129,26 @@ Weather-App
 
 
 # APIs Used
+The application uses:
 ## 1. weather API
 
-The application uses:
-
-### a. Open-Meteo API
+#### Open-Meteo API
 
 It provides:
 
 * Location coordinates
 * Weather forecast data
-* YouTube API
+## 2. YouTube API
 
-Used to display travel videos related to searched locations.
+* Used to display travel videos related to searched locations.
 
-### b. Database
+# Database
 
 * The application uses SQLite.
 
 * The database file is automatically created when running the backend for the first time.
 
-### c. Environment Variables
+# Environment Variables
 
 The backend uses environment variables for API keys.
 
