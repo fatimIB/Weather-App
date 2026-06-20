@@ -20,7 +20,6 @@ A full-stack weather application that allows users to search for weather forecas
 - Location exploration:
   - YouTube travel video
   - Google Maps location view
-- Responsive UI with animated backgrounds
 
 
 ## Technologies Used
@@ -103,31 +102,6 @@ npm run dev
 
 The application will run on the URL provided by Vite, usually: http://localhost:5173
 
-# Project Structure
-```
-Weather-App
-│
-├── backend
-│   │
-│   ├── app.py
-│   ├── models.py
-│   ├── extensions.py
-│   ├── requirements.txt
-│   ├── routes
-│   ├── services
-│   └── .env.example
-│
-│
-├── frontend
-│   │
-│   ├── src
-│   ├── package.json
-│   └── components
-│
-│
-└── README.md
-
-```
 # APIs Used
 The application uses:
 ## 1. weather API
