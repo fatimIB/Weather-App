@@ -104,7 +104,7 @@ npm run dev
 The application will run on the URL provided by Vite, usually: http://localhost:5173
 
 # Project Structure
-
+```
 Weather-App
 │
 ├── backend
@@ -126,7 +126,7 @@ Weather-App
 │
 │
 └── README.md
-
+```
 
 # APIs Used
 The application uses:
