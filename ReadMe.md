@@ -126,8 +126,8 @@ Weather-App
 │
 │
 └── README.md
-```
 
+```
 # APIs Used
 The application uses:
 ## 1. weather API
