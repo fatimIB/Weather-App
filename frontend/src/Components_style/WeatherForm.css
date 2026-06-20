@@ -1,0 +1,83 @@
+.weather-form {
+    width: 80%;
+    margin: 60px auto;
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+
+}
+
+.weather-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: white;
+      text-shadow:
+    0 6px 15px rgba(0, 0, 0, 0.25);
+
+}
+
+
+
+.weather-form input {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #cbd5e1;
+    font-size: 15px;
+    width: 180px;
+    background: transparent;
+    color: rgb(255, 255, 255);
+    box-shadow:
+    0 4px 15px rgba(0,0,0,0.25);
+
+
+}
+
+
+
+.weather-form input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+
+
+.button-group{
+    display:flex;
+    gap:10px;
+    align-items:flex-end;
+    
+}
+
+.weather-form button {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 12px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow:
+    0 4px 15px rgba(0,0,0,0.25);
+}
+
+
+
+.weather-form button:hover {
+    background: #1d4ed8;
+}
+
+
+
+
+.error {
+    width: 100%;
+    margin-top: 10px;
+    color: rgb(184, 30, 30);
+    font-weight: 600;
+    text-shadow:
+    0 6px 15px rgba(0, 0, 0, 0.25);
+
+}

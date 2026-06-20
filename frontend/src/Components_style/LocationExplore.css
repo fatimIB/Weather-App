@@ -1,0 +1,106 @@
+.explore {
+
+
+    width: 80%;
+
+    margin: 50px auto;
+
+
+    color: white;
+
+
+}
+
+
+
+.explore h2 {
+
+    font-size: 70px;
+
+    line-height: 1;
+
+
+    margin: 0;
+
+
+    font-weight: 800;
+
+
+    text-align: center;
+
+
+    margin-bottom: 30px;
+
+
+    text-shadow:
+        0 6px 15px rgba(0, 0, 0, 0.3);
+
+
+}
+
+
+
+.explore-cards {
+
+
+    display: flex;
+
+
+    gap: 30px;
+
+
+}
+
+
+
+.explore-card {
+
+
+    flex: 1;
+
+
+    background: rgba(255, 255, 255, 0.15);
+
+
+    backdrop-filter: blur(10px);
+
+
+    padding: 20px;
+
+
+    border-radius: 20px;
+
+
+    box-shadow:
+
+        0 10px 30px rgba(0, 0, 0, 0.3);
+
+
+}
+
+
+
+.explore-card iframe {
+
+
+    border-radius: 15px;
+
+
+    border: none;
+
+
+}
+
+
+
+@media(max-width:800px) {
+
+
+    .explore-cards {
+
+        flex-direction: column;
+
+    }
+
+
+}

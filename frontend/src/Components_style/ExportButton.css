@@ -1,0 +1,173 @@
+.export-container {
+
+    position: absolute;
+
+    top: 20px;
+
+    right: 30px;
+
+    width: 150px;
+
+}
+
+
+
+.selected {
+
+
+    background: #2563eb;
+
+    color: white;
+
+    padding: 12px 18px;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+
+.arrow {
+
+    font-size: 14px;
+
+}
+
+
+
+.options {
+
+
+    position: absolute;
+
+    top: 55px;
+
+    right: 0;
+
+    width: 100%;
+
+    background: white;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+
+    overflow: hidden;
+
+}
+
+
+
+.option {
+
+
+    padding: 12px;
+
+    cursor: pointer;
+
+}
+
+
+
+.option:hover {
+
+
+    background: #e0f2fe;
+
+}
+
+.export-toast {
+
+    position: fixed;
+
+    top: 30px;
+
+    right: 30px;
+
+
+    background: #c52222;
+
+    color: white;
+
+
+    padding: 15px 25px;
+
+
+    border-radius: 12px;
+
+
+    font-weight: 600;
+
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+
+    animation:
+        slideIn 0.3s ease,
+        slideOut 0.3s ease 2.7s;
+
+
+    z-index: 9999;
+
+}
+
+
+
+
+@keyframes slideIn {
+
+
+    from {
+
+        transform: translateX(100px);
+
+        opacity: 0;
+
+    }
+
+
+    to {
+
+        transform: translateX(0);
+
+        opacity: 1;
+
+    }
+
+
+}
+
+
+
+
+
+@keyframes slideOut {
+
+
+    from {
+
+        transform: translateX(0);
+
+        opacity: 1;
+
+    }
+
+
+    to {
+
+        transform: translateX(100px);
+
+        opacity: 0;
+
+    }
+
+
+}
