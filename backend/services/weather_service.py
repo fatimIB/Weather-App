@@ -2,37 +2,20 @@ import requests
 
 
 def get_coordinates(location):
-
     geo_url = (
         f"https://geocoding-api.open-meteo.com/v1/search"
         f"?name={location}&count=1"
     )
-
-
     geo = requests.get(geo_url).json()
-
-
     if "results" not in geo:
-
         return None
-
-
 
     place = geo["results"][0]
-
-
     searched = location.lower().strip()
-
     found = place["name"].lower().strip()
 
-
-
     if searched not in found and found not in searched:
-
         return None
-
-
-
     return place
 
 

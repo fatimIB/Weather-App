@@ -22,17 +22,14 @@ def history():
 
     records=WeatherRecord.query.all()
     return jsonify([
-
-    {
-    "id":r.id,
-    "location":r.location,
-    "country":r.country,
-    "start":r.start_date,
-    "end":r.end_date
-    }
-
-    for r in records
-
+        {
+            "id":r.id,
+            "location":r.location,
+            "country":r.country,
+            "start":r.start_date,
+            "end":r.end_date
+        }
+        for r in records
     ])
 
 
@@ -40,39 +37,26 @@ def history():
 
 @history_bp.route("/history/<int:id>")
 def details(id):
-
     record=WeatherRecord.query.get(id)
-
-
     return jsonify({
-
-    "id":record.id,
-
-    "location":record.location,
-
-    "weather_data":json.loads(record.weather_data)
-
-    })
+        "id":record.id,
+        "location":record.location,
+        "weather_data":json.loads(record.weather_data)
+        })
 
 
 
 
 @history_bp.route("/history/<int:id>",methods=["DELETE"])
 def delete(id):
-
     record=WeatherRecord.query.get(id)
-
-
     db.session.delete(record)
-
     db.session.commit()
-
-
     return jsonify(
-    {
-    "message":"Deleted"
-    }
-    )
+        {
+            "message":"Deleted"
+            }
+        )
 
 
 
@@ -113,15 +97,10 @@ def update_history(id):
     )
 
     saved_weather = build_saved_weather(weather)
-
     record.location = place["name"]
-
     record.country = place.get("country")
-
     record.start_date = start_date
-
     record.end_date = end_date
-
     record.weather_data = json.dumps(
         saved_weather
     )

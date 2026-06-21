@@ -9,13 +9,9 @@ from dotenv import load_dotenv
 
 
 
-
-
 app = Flask(__name__)
 
-
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///weather.db"
-
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
 
@@ -27,7 +23,6 @@ CORS(app)
 load_dotenv()
 
 with app.app_context():
-
     db.create_all()
 
 
@@ -46,13 +41,9 @@ app.register_blueprint(export_bp)
 
 @app.route("/")
 def home():
-
     return {
         "message":"Weather API is running"
     }
-
-
-
 
 if __name__=="__main__":
 

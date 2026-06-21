@@ -4,10 +4,7 @@ import requests
 
 YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY")
 
-
 def get_youtube_video(location):
-
-
     url = (
         "https://www.googleapis.com/youtube/v3/search"
         f"?part=snippet"
@@ -16,17 +13,10 @@ def get_youtube_video(location):
         f"&maxResults=1"
         f"&key={YOUTUBE_API_KEY}"
     )
-
-
     response = requests.get(url)
-
-
     data = response.json()
 
-
-
     if "items" not in data or len(data["items"]) == 0:
-
         return None
 
 
