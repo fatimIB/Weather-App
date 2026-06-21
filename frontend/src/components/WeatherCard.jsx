@@ -26,6 +26,9 @@ function WeatherCard({
 
     }
     const formatTime = (dateTime) => {
+        if (!dateTime) {
+            return "N/A"
+        }
         return dateTime.split("T")[1]
 
     }

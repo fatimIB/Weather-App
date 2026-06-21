@@ -96,7 +96,6 @@ function WeatherForm({ setWeather, setSelectedWeather, getHistory }) {
                 <span style={{ textShadow: "4px 15px rgba(0,0,0,0.25);", color: "white", marginBottom: "10px" }}>OR</span>
                 <button onClick={() => {
                     getHistory()
-                    disabled = { loading }
                 }}>
                     See History
                 </button>

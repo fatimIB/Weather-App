@@ -1,6 +1,8 @@
 import io
 import csv
 import json
+import matplotlib
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from flask import Blueprint, send_file
 
@@ -64,7 +66,8 @@ def export_csv(id):
 def export_pdf(id):
     record = WeatherRecord.query.get(id)
     if not record:
-        return {"error":"Record not found"},404
+        return {"error":"Record not found"
+},404
     weather=json.loads(
         record.weather_data
     )
